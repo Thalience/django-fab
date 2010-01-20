@@ -3,6 +3,7 @@ import sys
 import ConfigParser
 import subprocess
 from djangofab.api import *
+from fabric.api import local as _local
 
 def local(cmd):
     if hasattr(env,'capture_default'):
